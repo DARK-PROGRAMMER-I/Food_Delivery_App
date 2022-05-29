@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/home/homePageBody.dart';
 import 'package:food_delivery_app/utils/colors.dart';
@@ -20,6 +21,7 @@ class _FoodHomePageState extends State<FoodHomePage> {
         body: Column(
           children: [
             Container(
+
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: Dimensions.height20),
                 padding: EdgeInsets.symmetric(vertical: Dimensions.width20),
@@ -27,10 +29,12 @@ class _FoodHomePageState extends State<FoodHomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         BigText( 'Pakistan', AppColors.mainColor),
 
                         Row(
+                          // crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             SmallText('Islamabad', 15 ,Colors.black54),
                             IconButton(

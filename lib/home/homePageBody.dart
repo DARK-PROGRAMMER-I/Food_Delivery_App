@@ -60,12 +60,18 @@ class _HomePageBodyState extends State<HomePageBody> {
         // polular text
         SizedBox(height: Dimensions.height30,),
         Container(
-          margin: EdgeInsets.only(left: Dimensions.width30),
+          margin: EdgeInsets.only(left: Dimensions.width20),
           child: Row(
             children: [
               BigText('Popular '),
               SizedBox(width: Dimensions.width5,),
-              SmallText(' Food pricing')
+              Container(
+                  margin: EdgeInsets.only(bottom: 2),
+                  child: SmallText('.' , 15, Colors.black)),
+              SizedBox(width: Dimensions.width5,),
+              Container(
+                  margin: EdgeInsets.only(top: 2),
+                  child: SmallText(' Food pricing'))
             ],
           ),
         ),
